@@ -61,13 +61,13 @@
     outline: none;
 }
 
-.btn-success:hover {
+.btn-success-profile:hover {
     background-color: #2ee59d;
     box-shadow: 0px 15px 20px rgba(46, 229, 157, 0.4);
     color: #fff;
     transform: translateY(-7px);
 }
-.btn-cancel:hover {
+.btn-cancel-profile:hover {
     background-color: #f53c3c;
     box-shadow: 0px 15px 20px rgba(229, 46, 46, 0.4);
     color: #fff;

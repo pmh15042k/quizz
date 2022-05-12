@@ -33,8 +33,8 @@
                                         picture.</a>
                                 </div>
                                 <div class="submitUpdateAvatar mt-4 mb-4">
-                                    <button class="button btn-success">Submit</button>
-                                    <input type="submit" class="button btn-cancel" value="Cancel">
+                                    <button class="button btn-success-profile">Submit</button>
+                                    <input type="submit" class="button btn-cancel-profile" value="Cancel">
                                 </div>
                             </form>
                             <h5 class="h3 fullName my-3">{{ Auth::user()->first_name }} {{ Auth::user()->last_name }}

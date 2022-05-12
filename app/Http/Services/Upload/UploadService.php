@@ -52,4 +52,21 @@ class UploadService
         }
         return false;
     }
+    function storeThumbCategory($request)
+    {
+        try {
+            if ($request->hasFile('file')) {
+                $name = rand() . '.' . strtolower($request->file('file')->getClientOriginalName());
+                $publicPath = public_path('storage/images/category/');
+                //path save img 300
+                Image::make($request->file('file'))->resize(300, null, function ($constraint) {
+                    $constraint->aspectRatio();
+                    $constraint->upsize();
+                })->save($publicPath . $name);
+                return $name;
+            }
+        } catch (\Exception $error) {
+            return $error;
+        }
+    }
 }

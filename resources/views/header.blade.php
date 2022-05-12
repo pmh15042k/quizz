@@ -78,8 +78,15 @@
                         <a class="menu_link nav-link" href="#">Home</a>
                     </li>
                     <li class="nav-item">
+                        <?php
+                        if(!empty(Auth::user()->role))
+                            {
+                        ?>
                         <a class="menu_link nav-link"
                             href="{{ Auth::user()->role == 1 ? route('admin.topic') : route('member.topic') }}">Topic</a>
+                        <?php
+                    }
+                        ?>
                     </li>
                     <li></li>
                     <li class="nav-item">

@@ -15,4 +15,3 @@ $('INPUT[type="file"]').change(function () {
             this.value = "";
     }
 });
-
